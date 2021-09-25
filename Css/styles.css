@@ -31,6 +31,8 @@ html,body{
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    position: sticky;
+    top: 0;
 }
    
 .nav a{
@@ -51,4 +53,44 @@ html,body{
     border-radius:5px;
     font-size: 20px;
     transition: .25s ease-in;
+}
+
+/* Header  */
+header{
+    /*
+    background-image:linear-gradient(rgba(0, 0,0, .2),rgba(0,0,0,.9)) ;
+    background: #333 url('../Img/img.jpg') no-repeat center center/cover; */
+    background:linear-gradient(to top ,rgba(0,0,0,0.2),rgba(0,0,0,0.9)),url('../Img/img.jpg') no-repeat center center/cover;
+    /* opacity: 0.25; */
+}
+header .l-header{
+  
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;rem;
+    text-align: center;
+
+
+}
+
+header .l-header h2 {
+    margin-bottom:2rem;
+    color:#fff;
+}
+header .l-header p{
+    margin:2rem;
+    font-weight:bolder;
+    color:#fff;
+}
+header .l-header .btn{
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color:#fff;
+    background-color: orange;
+    border-radius:9px;
+    border: none;
 }
