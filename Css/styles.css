@@ -1,0 +1,54 @@
+@font-face{
+    font-family:"vazir";
+    src: url('fonts/vazir.ttf') format('truetype');
+    src: url('fonts/vazir.woff') format('woff');
+    src: url('fonts/vazir.woff2') format('woff2');
+    src: url('fonts/vazir.eot') format('eot');
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html,body{
+    font-family:'vazir',Arial, sans-serif;
+    line-height: 1.4;
+}
+
+/*  Utility variebles  */
+.bg-dark{
+    background-color: #333;
+    color:#fff;
+}
+.col-primary{
+    color:orange;
+}
+
+
+/*  Nav Bar  */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+   
+.nav a{
+    color:#fff;
+    padding: .75rem;
+}
+.nav .nav-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    list-style-type:none;
+    font-weight: bold;
+}
+
+.nav .nav-list li:hover{
+    background-color: orange;
+    color:#fff;
+    border-radius:5px;
+    font-size: 20px;
+    transition: .25s ease-in;
+}
