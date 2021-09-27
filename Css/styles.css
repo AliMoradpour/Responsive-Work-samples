@@ -1,9 +1,12 @@
-@font-face{
-    font-family:"vazir";
-    src: url('fonts/vazir.ttf') format('truetype');
-    src: url('fonts/vazir.woff') format('woff');
-    src: url('fonts/vazir.woff2') format('woff2');
-    src: url('fonts/vazir.eot') format('eot');
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir.woff2') format('woff2'),
+         url('../fonts/Vazir.woff') format('woff'),
+         url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 *{
     margin: 0;
@@ -20,10 +23,39 @@ html,body{
     background-color: #333;
     color:#fff;
 }
+m-heading{
+    font-size: 1.5rem;
+}
+.list{
+    margin: .5rem;
+    list-style-type: none;
+}
 .col-primary{
     color:orange;
 }
+.container{
+    max-width: 1100px;
+    margin: auro;
+    padding: 0 2rem;
+}
+.bg-light{
+    background-color: #f4f4f4;
+    color: #333;
+}
+.text-center{
+    text-align: center;
+}
+.p-1{padding:.75rem}
+.p-2{padding: 2rem}
+.p-3{padding: 3rem}
 
+.py-1{padding:0 .75rem}
+.py-2{padding:0  2rem}
+.py-3{padding:0  3rem}
+
+.m-1{margin:.75rem}
+.m-2{margin: 2rem}
+.m-3{margin: 3rem}
 
 /*  Nav Bar  */
 
@@ -57,14 +89,9 @@ html,body{
 
 /* Header  */
 header{
-    /*
-    background-image:linear-gradient(rgba(0, 0,0, .2),rgba(0,0,0,.9)) ;
-    background: #333 url('../Img/img.jpg') no-repeat center center/cover; */
     background:linear-gradient(to top ,rgba(0,0,0,0.2),rgba(0,0,0,0.9)),url('../Img/img.jpg') no-repeat center center/cover;
-    /* opacity: 0.25; */
 }
 header .l-header{
-  
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -72,10 +99,7 @@ header .l-header{
     align-items: center;
     font-size: 1.5em;rem;
     text-align: center;
-
-
 }
-
 header .l-header h2 {
     margin-bottom:2rem;
     color:#fff;
@@ -85,7 +109,7 @@ header .l-header p{
     font-weight:bolder;
     color:#fff;
 }
-header .l-header .btn{
+header .btn{
     padding: 1rem 2rem;
     font-weight: bold;
     font-size: 1rem;
@@ -93,4 +117,56 @@ header .l-header .btn{
     background-color: orange;
     border-radius:9px;
     border: none;
+}
+.btn:hover{
+    color: orange;
+    background-color: #fff;
+    transition-duration: 0.25s ;
+}
+
+
+/* Sections */
+
+    /* FIRST  */
+#section1{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    min-height: 50vh;
+}
+#section1 .items{
+    display:flex;
+    padding:1rem;
+}
+#section1 .items .item{
+    flex: 1;
+    text-align: center;
+    padding: 0 2rem;
+    margin: 1.5rem;
+
+}
+#section1 .items .item i{
+    background-color: orange;
+    font-size: 3rem;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+    /* SECOND */
+#section2{
+    display: flex;
+    min-height: 40vh;
+}
+#section2 div{
+    flex: 1;
+}
+#section2 .img{
+    background: url('../Img/section2.jpg') no-repeat center center/cover;
+}
+#section2 .content{
+    text-align: right;
+}
+#section2 .list li {
+    border-bottom: #444 dotted 1px;
+    padding: .5rem;
 }
